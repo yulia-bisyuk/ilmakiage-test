@@ -1,0 +1,25 @@
+// main: ../style.less
+
+.buttons-wrapper {
+  .centered-block();
+  width: fit-content;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.button-search {
+  .button-resets();
+  padding: 12px 28px;
+  background-color: @button-bg;
+  color: @text;
+  border-radius: 4px;
+  cursor: pointer;
+
+  & + & {
+    margin-left: 12px;
+  }
+
+  &:hover {
+    box-shadow: @button-shadow;
+  }
+}
